@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Lic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <a href="Gerar-Papeletas.html" class="hover-logo">
+            <div class="logo">
+                <img src="./assets/Marinha-do-brasil-Logo.png" alt="Logo Marinha">
+            </div>
+            <div class="text">
+                <h1> Chão ? </h1>
+            </div>
+        </a>
+
+        <div id="icone" onclick="girarModal()" class="girar-icone hover">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal militares" id="modal">
+            <li>
+                <a href="./Gerar-Papeletas.html" class="nav">
+                    <i class="fa-solid fa-house"></i>
+                    <div>Home</div>
+                </a>
+
+                <a href="./papeleta.html" class="nav">
+                    <i class="fa-solid fa-print"></i>
+                    <div>Modelo Papeleta</div>
+                </a>
+
+                <a href="./Sobre.html" class="nav">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <div>Sobre</div>
+                </a>
+            </li>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="">
+
+            <fieldset class="militares" id="nome-militares">
+                <legend class="legenda">Militares</legend>
+                <div class="militar" id="marcar-todos"><input type="checkbox" name="nome" id="todos"
+                        onclick="selecionarTodos()"> <label id="label-todos" for="todos">Todos</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="rocco" class="selec-todos"> <label
+                        id="label-militares" for="rocco">MNE-RM2-AD Rocco</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="oliveira" class="selec-todos"> <label
+                        id="label-militares" for="oliveira">MNE-RM2-AD C. Oliveira</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="sobral" class="selec-todos"> <label
+                        id="label-militares" for="sobral">MN-RM2 Sobral</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="deolindo" class="selec-todos"> <label
+                        id="label-militares" for="deolindo">MN-RM2 Deolindo</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="fidelis" class="selec-todos"> <label
+                        id="label-militares" for="fidelis">MN-RM2 Fidelis</label></div>
+                <div class="militar"><input type="checkbox" name="nome" id="andre" class="selec-todos"> <label
+                        id="label-militares" for="andre">MN-RM2 André Luiz</label></div>
+            </fieldset>
+
+            <fieldset id="tempo-fixo" class="militares">
+                <legend>Horários Fixos</legend>
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="15:30">
+                    <div class="horario-fixo">15:30</div>
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="16:00">
+                    <div class="horario-fixo">16:00</div>
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="16:30">
+                    <div class="horario-fixo">16:30</div>
+                </label>
+
+            </fieldset>
+
+            <fieldset id="tempo-fixo" class="militares">
+                <legend>Adicionar minutos</legend>
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="5" class="adicionar-minutos">
+                    <div class="horario-fixo">+ 5 min</div>
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="10" class="adicionar-minutos">
+                    <div class="horario-fixo">+ 10 min</div>
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" class="esconder-input" value="15" class="adicionar-minutos">
+                    <div class="horario-fixo">+ 15 min</div>
+                </label>
+
+            </fieldset>
+
+            <fieldset id="caixa-imprimir" class="militares">
+                <button type="button" class="gerar" onclick="gerarPapeletas()">Gerar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <img src="./assets/Distintivo-removebg-preview.png" alt="Logo Capitania" class="logo-footer">
+        <span>Desenvolvido por : Victor Sobral</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9a0ab34c93.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

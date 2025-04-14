@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font: "Sriracha", cursive;
+    --font2: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    gap: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0.329) 90% );
+    background-color: #dddddd;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #2a60b1fa;
+    justify-content: space-between;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    margin-top: 7px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+
+    & img {
+        width: 170px;
+        height: auto;
+    }
+}
+
+.text {
+    padding-left: 0px;
+    color: #fff;
+    font-size: 20px; 
+}
+
+.hover-logo {
+    transition: 0.5s;
+}
+
+.hover-logo:hover {
+    transform: scale(1.1)
+}
+
+#icone {
+    color: #fff;
+    font-size: 40px;
+    height: auto;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 300px;
+    transition: 0.6s;
+}
+
+.hover.rodou {
+    transform: scale(1.3);
+}
+
+.girar-icone {
+    transition: transform 0.5s ease;
+}
+
+.girar-icone.rodou {
+    transform: rotate(-90deg);
+}
+
+.modal {
+    top: 40px;
+    width: 280px !important;
+    height: 170px;
+    position: absolute;
+    right: 290px;
+    z-index: 1;
+    border: 5px double #2f6cc7a2;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease, opacity 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: self-start;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.nav {
+    text-decoration: none;
+    column-gap: 20px;
+    color: #000;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.219);
+    transition: 0.5s;
+}
+
+.nav:hover {
+    transform: scale(1.3);
+    transform-origin: bottom left;
+}
+
+.militares {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 150px;
+    border: 5px double #2f6cc7a2;
+    background: #ffffff;
+    width: 400px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 20px;
+    border-radius: 20px;
+
+    & .militar {
+        margin-left: 15px;
+        height: 45px;
+    }
+
+    & label {
+        margin-left: 30px;
+    }
+}
+
+#nome-militares {
+    margin-left: 450px;
+}
+
+#label-militares {
+    transition: 0.6s;
+}
+
+#label-militares:hover {
+    font-size: 1.3rem;
+    transform-origin: top left;
+}
+
+#label-todos {
+    transition: 0.5s;
+}
+
+#label-todos:hover {
+    font-size: 1.8rem;
+    transform-origin: top left;
+}
+
+#rocco, #oliveira, #sobral, #deolindo, #fidelis, #andre {
+    margin-left: 40px;
+    transition: 0.6s;
+    
+}
+#rocco:hover, #oliveira:hover, #sobral:hover, #deolindo:hover, #fidelis:hover, #andre:hover {
+    transform: scale(2);
+}
+
+.legenda {
+        font-size: 25px;
+        margin-left: 15px;
+        padding: 0 5px;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.219);
+        position: relative;
+        top: -6px;
+}
+
+#marcar-todos {
+    font-size: 1.5rem;
+    
+    & input {
+        width: 20px;
+        height: 20px;
+    }
+
+    & label {
+        margin: 10px;
+    }
+}
+
+#tempo-fixo {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 130px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & legend {
+        font-size: 20px;
+        margin-left: 55px;
+        padding: 0 5px;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.219);
+        position: relative;
+        top: -5px;
+    }
+}
+
+.esconder-input {
+    display: none;
+}
+
+.horario-fixo {
+    height: 50px;
+    width: 200px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdededc;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 20px;
+    transition: 0.3s;
+}
+
+.horario-fixo:hover {
+    background-color: #2a60b1fa;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.horario-fixo.selecionado {
+    background-color: #2a60b1fa;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+#caixa-imprimir {
+    width: 500px;
+    height: 645px;
+    position: absolute;
+    right:10%;
+    top: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerar {
+    width: 300px;
+    height: 150px;
+    border-radius: 35px;
+    background-color: #3163add5;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 2.5rem;
+    transition: 0.6s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(2, 2, 3, 0.1) 0px 24px 80px;
+}
+
+.gerar:hover {
+    transform: scale(1.2);
+    background-color: #2a60b1fa;
+}
+
+footer {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.logo-footer {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.main-sobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-sobre {
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    margin: 50px 0 0 0px !important;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.219);
+}
+
+.text-sobre {
+    & h1 {
+        margin-top: -20px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    & h2 {
+        padding-top: 40px;
+        font-size: 1.1rem;
+        margin-left: 30px;
+    }
+
+    & p {
+        margin-top: 20px;
+        line-height: 40px;
+        text-align: justify;
+    }
+}

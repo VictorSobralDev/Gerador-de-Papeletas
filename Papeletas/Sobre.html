@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Gerador de Lic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <a href="Gerar-Papeletas.html" class="hover-logo">
+            <div class="logo">
+                <img src="./assets/Marinha-do-brasil-Logo.png" alt="Logo Marinha">
+            </div>
+            <div class="text">
+                <h1> Chão ? </h1>
+            </div>
+        </a>
+
+        <div id="icone" onclick="girarModal()" class="girar-icone hover">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="modal militares" id="modal">
+            <li>
+                <a href="./Gerar-Papeletas.html" class="nav">
+                    <i class="fa-solid fa-house"></i>
+                    <div>Home</div>
+                </a>
+
+                <a href="./papeleta.html" class="nav">
+                    <i class="fa-solid fa-print"></i>
+                    <div>Modelo Papeleta</div>
+                </a>
+
+                <a href="./Sobre.html" class="nav">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <div>Sobre</div>
+                </a>
+            </li>
+        </div>
+
+    </header>
+    
+    <main class="main-sobre">
+        <fieldset class="militares caixa-sobre" id="nome-militares">
+            <legend class="legenda">Sobre</legend>
+            <div class="text-sobre">
+                <h1>Esse foi um projeto realizado apenas para pratica de programação.</h1>
+                <h2>Como funciona e qual o intuito? </h2>
+                <p>O projeto foi feito para automatizar a criação de papeletas de licença, onde era feito manualmente. <br>
+                    O sistema permite selecionar nomes de militares e horários em um layout interativo. A partir dessas seleções, ele gera automaticamente papeletas personalizadas com base em um modelo padrão, preenchendo os dados dos militares, armazenados na memória do programa, juntamente com a data e hora atuais. Todo o processo é feito de forma automatizada, poupando tempo e reduzindo erros manuais.
+                </p>
+            </div>
+        </fieldset>
+
+    </main>
+
+    <footer>
+        <img src="./assets/Distintivo-removebg-preview.png" alt="Logo Capitania" class="logo-footer">
+        <span>Desenvolvido por : Victor Sobral</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9a0ab34c93.js" crossorigin="anonymous"></script>
+</body>
+</html>

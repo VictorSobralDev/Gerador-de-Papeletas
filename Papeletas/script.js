@@ -262,7 +262,7 @@ body {
   font-size: 14pt;
   margin: 0;
   padding: 0;
-  background: rgba(224, 224, 224, 0.486);
+  background: #fff;
 }
 
 header {
@@ -444,7 +444,7 @@ li {
 .grad-nip {
   display: flex;
   text-align: left;
-  column-gap: 40px;
+  column-gap: 20px;
   margin-bottom: -0.3cm;
 }
 

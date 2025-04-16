@@ -1,0 +1,30 @@
+@media (max-width: 1366px) {
+ 
+    fieldset {
+        height: 600px !important;
+    }
+
+    .caixa-sobre {
+        margin: -2px 0 0 0 !important;
+    }
+
+    footer {
+        margin: -25px 0 0 0 !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    fieldset {
+        height: 550px !important;
+        row-gap: 0;
+    }
+    .text-sobre {
+        & h2 { 
+           padding-top: 20px;
+        }
+    }
+
+    .modal {
+        right: 255px;
+    }
+}

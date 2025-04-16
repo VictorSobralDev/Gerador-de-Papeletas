@@ -275,7 +275,7 @@ li {
     color: #fff;
     border: 1px solid #000;
     font-size: 2.5rem;
-    transition: 0.6s;
+    transition: 0.3s;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(2, 2, 3, 0.1) 0px 24px 80px;
 }
 
@@ -330,5 +330,198 @@ footer {
         margin-top: 20px;
         line-height: 40px;
         text-align: justify;
+    }
+}
+
+@media (max-width: 1536px) {
+    #nome-militares {
+        margin-left: 280px;
+    }
+
+    #caixa-imprimir {
+        width: 430px;
+        height: 610px;
+        right: 8%;
+        top: 11%;
+    }
+
+    .militares {
+        margin: 2px 0 0 150px;
+    }
+
+    .modal {
+        top: 60px;
+    }
+
+    .horario-fixo {
+        width: 190px;
+        height: 48px;
+    }
+
+    #tempo-fixo {
+        width: 50%;
+
+        & label {
+            margin-left: 0;
+        }
+    }
+
+    .gerar {
+        width: 250px;
+        height: 130px;
+    }
+
+    footer {
+        margin:3px 0 0 50px;
+    }
+}
+
+@media (max-width: 1440px) {
+    #caixa-imprimir {
+        width: 390px;
+    }
+
+    .gerar {
+        transform: scale(0.8);
+    }
+    .gerar:hover {
+        transform: scale(1);
+    }
+
+    #tempo-fixo {
+        width: 50%;
+
+        & label {
+            margin-left: 0;
+        }
+    }
+
+    .horario-fixo {
+        width: 170px;
+        height: 45px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+} 
+
+@media (max-width: 1366px) {
+    #nome-militares {
+        transform: scale(0.9);
+    }
+
+    header {
+        height: 60px;
+
+        & .hover-logo {
+            transform: scale(0.7);
+        }
+
+    }
+
+    .hover-logo:hover {
+        transform: scale(0.8);
+    }
+
+    #tempo-fixo {
+        transform: scale(0.9);
+        height: 110px;
+    }
+
+    .militares {
+        height: 300px;
+
+        & .militar {
+            margin-top: -8px;
+            height: 43px;
+        }
+    }
+
+    #caixa-imprimir {
+        height: 495px;
+    }
+
+    .gerar {
+        transform: scale(0.8);
+    }
+    .gerar:hover {
+        transform: scale(0.9);
+    }
+
+    .modal {
+        height: 190px;
+        top: 50px;
+    }
+
+    li {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .horario-fixo {
+        width: 160px;
+        height: 40px;
+    }
+
+    #tempo-fixo {
+        height: 110px;
+    }
+
+    footer {
+        margin-top: -5px;
+    }
+
+    #icone {
+        right: 260px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #caixa-imprimir {
+        width: 340px;
+        height: 510px;
+    }
+
+    .militares {
+        margin: 0 0 0 15px;
+    }
+
+    #tempo-fixo {
+        width: 55%;
+        height: 120px;
+    }
+
+    #nome-militares {
+        margin-left: 105px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .horario-fixo {
+        width: 130px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .modal {
+        right: 250px;
+    }
+}
+
+@media (max-width: 1600px) {
+    #nome-militares {
+        margin:0 0 0 300px;
+    }
+
+    .militar {
+        height: 15px;
     }
 }
